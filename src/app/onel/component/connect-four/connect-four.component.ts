@@ -8,8 +8,8 @@ import { Matrix } from './../../class/matrix';
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { PlayerEnum } from './../../enum/player-enum';
 import { Observable } from 'rxjs/Observable';
-import 'rxjs/add/observable/Interval';
 import 'rxjs/add/operator/take';
+import 'rxjs/add/observable/interval';
 import 'rxjs/add/operator/map';
 
 @Component({
