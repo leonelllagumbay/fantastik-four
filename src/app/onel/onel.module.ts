@@ -1,3 +1,4 @@
+import { CanDeactivateFriends } from './class/can-deactivate-friends';
 import { Owner } from './constant/game-konstant';
 import { AppComponent } from './../app.component';
 import { SocketIoModule, Socket, SocketIoConfig } from 'ng-socket-io';
@@ -25,7 +26,7 @@ const routes: Routes = [{
 }, {
   path: 'friends',
   component: FriendsComponent,
-  // canDeactivate: [CanDeactivateFriends]
+  canDeactivate: [CanDeactivateFriends]
 }];
 
 const config: SocketIoConfig = {
