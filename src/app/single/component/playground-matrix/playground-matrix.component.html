@@ -1,0 +1,6 @@
+<app-matrix-column 
+  class="d-flex flex-column justify-content-center"
+  *ngFor="let matrixColumn of matrixInfo; let i = index"
+  [matrixColumn]="matrixColumn"
+  (mouseover)="matrixHover(i)"
+></app-matrix-column>

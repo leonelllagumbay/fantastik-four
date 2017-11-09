@@ -1,0 +1,10 @@
+<app-disc-case-row 
+  class="d-flex flex-row justify-content-center bg-success"
+  [matrixTopInfo]="matrixTopData"
+  ></app-disc-case-row>
+<app-playground-matrix 
+  class="d-flex flex-row justify-content-center bg-info"
+  [matrixInfo]="matrixData"
+  (matrixHovered)="playgroundMatrixHover($event)"
+  ></app-playground-matrix>
+<app-toolbar class="d-flex flex-row justify-content-centerx bg-success mt-2 p-1"></app-toolbar>

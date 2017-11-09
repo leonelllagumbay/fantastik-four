@@ -1,0 +1,7 @@
+<app-disc-cell
+  *ngFor="let disc of matrixColumn"
+  [discInfo]="disc"
+  [class.bg-primary]="isActive"
+  (mouseover)="matrixMouseOver()"
+  (mouseout)="matrixMouseOut()"
+></app-disc-cell>
