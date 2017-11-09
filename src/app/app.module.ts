@@ -1,7 +1,7 @@
-import { OnelModule } from './onel/onel.module';
+import { SingleModule } from './single/single.module';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 import { AppComponent } from './app.component';
 import { Routes, RouterModule } from '@angular/router';
@@ -19,7 +19,7 @@ const routes: Routes = [{
     BrowserModule,
     NgbModule.forRoot(),
     RouterModule.forRoot(routes, {useHash: false}),
-    OnelModule
+    SingleModule
   ],
   providers: [],
   bootstrap: [AppComponent]
